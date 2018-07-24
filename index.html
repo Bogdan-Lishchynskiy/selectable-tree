@@ -3,20 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Selectable app</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <title>Selectable tree app</title>
 </head>
 <body>
-        <form action="" method=""></form>
-        <select onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-                <option value=""></option>
-                 <option disabled>select</option>
-                 <option>Чебурашка</option>
-                 <option>Крокодил Гена</option>
-                 <option>Шапокляк</option>
-                 <option>Крыса Лариса</option>
-                </select>
-                <input type="submit" value="Search"></p>
-        </form>
-    <script src ="app.js"></script>
+    <ul id="menu" style="display:none;"></ul>
+    <button id="showMenu" type="button">Select items</button>
+    <br><br>
+    <div id="search">
+        <div id="dynamicContent"></div>
+        <br>
+        <button id="submitButton" type="button">Search</button>
+        &nbsp;&nbsp;&nbsp;
+        <button id="clearForm" type="button">Clear</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>  
+    <script src="app.js"></script>
 </body>
-</html>
+</html> 
